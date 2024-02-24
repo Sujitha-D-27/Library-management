@@ -1,0 +1,65 @@
+/* Books.css */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .books {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .book {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
+  .delete,
+  .update {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px;
+    background-color: #f44336; /* Red color for delete button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .update {
+    background-color: #4caf50; /* Green color for update button */
+  }
+  
+  .pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination button {
+    background-color: #008CBA;
+    color: white;
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  
+  .pagination button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Add new Book button */
+  button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #4caf50;
+    padding: 10px 15px;
+    margin-top: 20px;
+    display: inline-block;
+    width:300px;
+  }
+  
