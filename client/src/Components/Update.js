@@ -19,7 +19,7 @@ const Update = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      await axios.put(`http://localhost:3306/Admin/${book.id}`, book);
+      await axios.put(`http://localhost:6060/Admin/${book.id}`, book);
       navigate("/"); // Use navigate function instead of Navigate component
     } catch (err) {
       console.log(err);

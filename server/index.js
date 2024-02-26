@@ -1,16 +1,14 @@
-require('dotenv').config();
 const express=require('express');
 const cors=require('cors');
 const mysql=require('mysql');
 const app=express();
 app.use(express.json());
 app.use(cors());
-  
 const db=mysql.createConnection({
-     host : process.env.DB_HOST,
-     user : process.env.DB_USER,
-     password : process.env.DB_PASSWORD,
-     database : process.env.DB_DATABASE
+     host : "bvfksokz3tms5a7rfrjp-mysql.services.clever-cloud.com",
+     user : "uzbij4jrzghij4wi",
+     password : "GUFxuJlawMgNBnniR2Xz",
+     database : "bvfksokz3tms5a7rfrjp"
 })
 app.post('/signup', (req, res) => {
     const values = [
@@ -30,7 +28,7 @@ app.post('/signup', (req, res) => {
 
        
 
-app.post('/loginn', (req, res) => {
+app.post('/login', (req, res) => {
     const mail = req.body.email;
     const pwd = req.body.password;
 
@@ -155,6 +153,6 @@ app.put("/Admin/:id",(req,res)=>{
         return res.json("Book has been updated successfully");
     })
 })
-app.listen(3306,()=>{
+app.listen(6060,()=>{
     console.log("Server is running...")
 })
