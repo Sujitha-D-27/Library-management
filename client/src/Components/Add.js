@@ -22,7 +22,7 @@ const Add = () => {
     e.preventDefault();
   
     try {
-      await axios.post('http://localhost:3000/books', book);
+      await axios.post('https://library-management-1-m3xj.onrender.com/books', book);
       navigate('/books'); 
     } catch (err) {
       console.log(err);
