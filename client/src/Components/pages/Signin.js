@@ -87,7 +87,7 @@ export default function Signin() {
         event.preventDefault();
 
         try {
-          const response = await axios.post('http://localhost:6060/login', credentials);
+          const response = await axios.post('http://localhost:3000/login', credentials);
 
             const role = response.data.role;
             console.log(role);
