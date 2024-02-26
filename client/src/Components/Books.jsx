@@ -11,7 +11,7 @@ const Books = () => {
     useEffect(()=>{
         const fetchallbooks= async ()=>{
             try{
-              const res= await axios.get("http://localhost:3000/Admin")
+              const res= await axios.get("https://library-management-1-m3xj.onrender.com/Admin")
               setBooks(res.data);
               
             }catch(err){
@@ -25,7 +25,7 @@ const Books = () => {
     const currentBooks = books.slice(indexOfFirstBook, indexOfLastBook);
     const handleDelete=async(ID)=>{
         try{
-            await axios.delete(`http://localhost:3000/Admin/`+ID)
+            await axios.delete(`https://library-management-1-m3xj.onrender.com/Admin/`+ID)
              window.location.reload()
             console.log("It has been deleted"+ID)
             

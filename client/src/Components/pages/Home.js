@@ -13,7 +13,7 @@ const Home = () => {
     useEffect(() => {
         const fetchallbooks = async () => {
             try {
-                const res = await axios.get("http://localhost:3000/Admin")
+                const res = await axios.get("https://library-management-1-m3xj.onrender.com/Admin")
                 setBooks(res.data);
 
             } catch (err) {

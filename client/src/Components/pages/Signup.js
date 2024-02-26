@@ -18,7 +18,7 @@ function Signup() {
         setErrors(SignUpValidation(values));
         if (errors.name === "" && errors.email === "" && errors.password === "") {
             try {
-                const response = await axios.post('http://localhost:3000/signup', values);
+                const response = await axios.post('https://library-management-1-m3xj.onrender.com/signup', values);
                 console.log(response.data); // Handle response data as needed
                 navigate('/');
             }
